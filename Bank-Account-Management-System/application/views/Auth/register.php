@@ -23,26 +23,26 @@
 							<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
                                 <div class="mb-3">
 									<label class="mb-2 text-muted" for="email">Full Name</label>
-									<input id="name" type="text" class="form-control" value="" required autofocus>
+									<input id="name" name="name" type="text" class="form-control" value="" required autofocus>
 									
 								</div>
 								<div class="mb-3">
 									<label class="mb-2 text-muted" for="email">E-Mail Address</label>
-									<input id="email" type="email" class="form-control" value="" required autofocus>
+									<input id="email" name="email" type="email" class="form-control" value="" required autofocus>
 									
 								</div>
 
 								<div class="mb-3">
 								
                                     <label class="mb-2 text-muted" for="password">Passsword</label>
-									<input id="password" type="password" class="form-control" required>
+									<input id="password" name="pass" type="password" class="form-control" required>
 								  
 								</div>
 
                                 <div class="mb-3">
 								
                                     <label class="mb-2 text-muted" for="password">Confirm Passsword</label>
-									<input id="password" type="password" class="form-control"  required>
+									<input id="password" name="passCon" type="password" class="form-control"  required>
 								  
 								</div>
 
