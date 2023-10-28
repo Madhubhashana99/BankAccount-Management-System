@@ -56,7 +56,7 @@
 						</div>
 						<div class="card-footer py-3 border-0">
 							<div class="text-center">
-								Have an account ? <a href="#" class="text-dark"> Login</a>
+								Have an account ? <a href="Auth/login" class="text-dark"> Login</a>
 							</div>
 						</div>
 					</div>
