@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
 	<title>Bank Account Management System</title>
+    <link rel="stylesheet" href="all.css">
     <link rel="stylesheet" href="<?php echo site_url();?>assets/all.css">
 	<link rel="stylesheet" href="<?php echo site_url();?>assets/toast/toast.min.css">
 	<script src = "<?php echo site_url();?>assets/toast/toast.js"></script>
@@ -15,36 +15,48 @@
 			<div class="row justify-content-sm-center h-100">
 				<div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
 					<div class="text-center my-5">
-						<img src="assets/logo-2.png" alt="logo" width="200" height="auto">
+						<img src="assets/logo-2.png" alt="logo" width="100">
 					</div>
 					<div class="card shadow-lg">
 						<div class="card-body p-5">
-							<h1 class="fs-4 card-title fw-bold mb-4">Login</h1>
+							<h1 class="fs-4 card-title fw-bold mb-4">Register</h1>
 							<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
+                                <div class="mb-3">
+									<label class="mb-2 text-muted" for="email">Full Name</label>
+									<input id="name" type="text" class="form-control" value="" required autofocus>
+									
+								</div>
 								<div class="mb-3">
 									<label class="mb-2 text-muted" for="email">E-Mail Address</label>
-									<input id="email" type="email" class="form-control" name="email" value="" required autofocus>
+									<input id="email" type="email" class="form-control" value="" required autofocus>
 									
 								</div>
 
 								<div class="mb-3">
 								
                                     <label class="mb-2 text-muted" for="password">Passsword</label>
-									<input id="password" type="password" class="form-control" name="password" required>
+									<input id="password" type="password" class="form-control" required>
+								  
+								</div>
+
+                                <div class="mb-3">
+								
+                                    <label class="mb-2 text-muted" for="password">Confirm Passsword</label>
+									<input id="password" type="password" class="form-control"  required>
 								  
 								</div>
 
 								<div class="d-flex align-items-center">
 								
-									<button type="submit" class="btn btn-primary ms-auto">
-										Login
+									<button type="submit" class="btn btn-primary ">
+										Register
 									</button>
 								</div>
 							</form>
 						</div>
 						<div class="card-footer py-3 border-0">
 							<div class="text-center">
-								Don't have an account? <a href="Auth/register" class="text-dark">Create One</a>
+								Have an account ? <a href="#" class="text-dark"> Login</a>
 							</div>
 						</div>
 					</div>
