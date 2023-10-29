@@ -17,10 +17,11 @@
                 redirect('Auth/register');
             }
             else{
+                $hashed_pass = password_hash($password,PASSWORD_DEFAULT);
                 $data=array(
                     "name"=>$this->input->post('name'),
                     "email"=>$this->input->post('email'),
-                    "password"=>$password
+                    "password"=>$hashed_pass
                 );
 
                 $this->db->insert('users',$data);
