@@ -26,4 +26,10 @@ class Auth extends CI_Controller {
 	public function home(){
 		$this->load->view('Auth/home');
 	}
+
+	#Adding Account Details
+	public function add_account()
+	{
+		    $this->load->view('Auth/add_account');
+	}
 }
