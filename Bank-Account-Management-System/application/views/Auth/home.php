@@ -35,9 +35,10 @@
         </div>
     </nav>
 
-
+    <br><br><br>
     <div>
-
+    <img src="<?php echo site_url();?>assets/bank.jpg" alt="logo" width="500" height="auto" margin-left="10px">
+    <h1>Bank Account Management System</h1>
     </div>
 
     <!-- Add Bootstrap JS and jQuery -->

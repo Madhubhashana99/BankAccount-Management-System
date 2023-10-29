@@ -20,16 +20,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active mr-4">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="<?php echo site_url();?>Auth/home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item mr-4">
-                    <a class="nav-link" href="#">Bank Details</a>
+                    <a class="nav-link" href="<?php echo site_url();?>Auth/view_account">Bank Details</a>
                 </li>
                 <li class="nav-item mr-4">
                     <a class="nav-link" href="<?php echo site_url();?>Auth/add_account">Add Bank Details</a>
                 </li>
                 <li class="nav-item mr-4">
-                    <a class="nav-link" href="#">Delete</a>
+                    <a class="nav-link" href="<?php echo site_url();?>Auth/delete_account">Delete</a>
                 </li>
                 <li class="nav-item mr-4">
                     <a class="btn btn-danger" href="<?php echo site_url();?>">Logout</a>
