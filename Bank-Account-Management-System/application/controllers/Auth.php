@@ -62,4 +62,21 @@ class Auth extends CI_Controller {
 		$data['bank_accounts'] = $this->auth_model->getAccounts();
 		$this->load->view('Auth/view_account',$data);
 	}
+
+	public function delete_account(){
+		$data['bank_accounts'] = $this->auth_model->getAccounts();
+		$this->load->view('Auth/delete_account',$data);
+	}
+
+	function delete($id){
+		if(is_numeric($id)){
+			$status=$this->auth_model->deleteAccount($id);
+			if($status==true){
+				$this->session->set_flashdata('success','successfully updted');
+				redirect(base_url('Auth/delete_account'));
+			}else{
+				$this->session->set_flashdata('error','Error');
+			}
+	}
+}
 }

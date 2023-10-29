@@ -68,5 +68,28 @@
             return $query->result_array();
         }
 
+        function delete_account(){
+           /* $this->db->where('id',$id);
+            $this->db->delete('bank_accounts');
+            if($this->db->affected_rows()>=0){
+                return true;
+            }else{
+                return false;
+            }*/
+            $query = $this->db->get('bank_accounts');
+            return $query->result_array();
+        }
+
+        function deleteAccount($id){
+            $this->db->where('id',$id);
+            $this->db->delete('bank_accounts');
+            if($this->db->affected_rows()>=0){
+                return true;
+            }else{
+                return false;
+            }
+
+        }
+
     }
 ?>

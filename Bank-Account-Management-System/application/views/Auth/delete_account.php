@@ -20,13 +20,13 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item mr-4">
-                    <a class="nav-link" href="<?php echo site_url();?>Auth/view_account">Bank Details</a>
+                    <a class="nav-link" href="#">Bank Details</a>
                 </li>
                 <li class="nav-item mr-4">
                     <a class="nav-link" href="<?php echo site_url();?>Auth/add_account">Add Bank Details</a>
                 </li>
                 <li class="nav-item mr-4">
-                    <a class="nav-link" href="<?php echo site_url();?>Auth/delete_account">Delete</a>
+                    <a class="nav-link" href="#">Delete</a>
                 </li>
                 <li class="nav-item mr-4">
                     <a class="btn btn-danger" href="<?php echo site_url();?>">Logout</a>
@@ -39,6 +39,32 @@
     <div>
 
     </div>
+    <br><br>
+    <div class="container">
+    <div class="d-flex justify-content-center">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Bank Name</th>
+                    <th scope="col">Branch Name</th>
+                    <th scope="col">Account Number</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php $i=1; foreach($bank_accounts as $row){?>
+                <tr>
+                    <td><?=$row['bank_name']?></td>
+                    <td><?=$row['branch']?></td>
+                    <td><?=$row['account_number']?></td>
+                    <td><a href="<?=base_url()?>Auth/delete/<?=$row['id'] ?>" class="btn btn-danger">Delete</a></td>
+
+                </tr>
+                <?php }?>
+            </tbody>
+        </table>
+    </div>
+</div>
 
     <!-- Add Bootstrap JS and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
