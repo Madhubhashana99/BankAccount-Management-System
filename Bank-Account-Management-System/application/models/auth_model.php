@@ -62,5 +62,11 @@
             }
         }
 
+
+        function getAccounts(){
+            $query = $this->db->get('bank_accounts');
+            return $query->result_array();
+        }
+
     }
 ?>

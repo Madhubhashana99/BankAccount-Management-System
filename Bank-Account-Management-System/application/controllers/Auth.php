@@ -56,4 +56,10 @@ class Auth extends CI_Controller {
 			}
 		    $this->load->view('Auth/add_account');
 	}
+
+	public function view_account(){
+
+		$data['bank_accounts'] = $this->auth_model->getAccounts();
+		$this->load->view('Auth/view_account',$data);
+	}
 }
