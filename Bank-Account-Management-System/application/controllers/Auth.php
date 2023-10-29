@@ -17,4 +17,13 @@ class Auth extends CI_Controller {
 	{
 		$this->auth_model->register_user();
 	}
+
+	public function login_form()
+	{
+		$this->auth_model->login_user();
+	}
+
+	public function home(){
+		$this->load->view('Auth/home');
+	}
 }
