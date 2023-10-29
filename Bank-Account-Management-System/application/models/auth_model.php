@@ -33,6 +33,7 @@
         public function login_user(){
             $email = $this->input->post('email');
             $password = $this->input->post('password');
+            $password = password_verify($password, $user->password);
 
             $this->db->where('email',$email);
             $this->db->where('password',$password);
