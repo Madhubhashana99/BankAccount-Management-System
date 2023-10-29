@@ -15,7 +15,7 @@
 			<div class="row justify-content-sm-center h-100">
 				<div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
 					<div class="text-center my-5">
-						<img src="assets/logo-2.png" alt="logo" width="100">
+						<img src="<?php echo site_url();?>assets/logo-2.png" alt="logo" width="200" height="auto">
 					</div>
 					<div class="card shadow-lg">
 						<div class="card-body p-5">
@@ -56,7 +56,7 @@
 						</div>
 						<div class="card-footer py-3 border-0">
 							<div class="text-center">
-								Have an account ? <a href="Auth/login" class="text-dark"> Login</a>
+								Have an account ? <a href="<?php echo site_url();?>" class="text-dark"> Login</a>
 							</div>
 						</div>
 					</div>
