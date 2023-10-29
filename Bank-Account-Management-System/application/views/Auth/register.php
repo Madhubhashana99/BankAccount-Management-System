@@ -20,7 +20,7 @@
 					<div class="card shadow-lg">
 						<div class="card-body p-5">
 							<h1 class="fs-4 card-title fw-bold mb-4">Register</h1>
-							<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
+							<?php echo form_open('Auth/registration_form');?>
                                 <div class="mb-3">
 									<label class="mb-2 text-muted" for="email">Full Name</label>
 									<input id="name" name="name" type="text" class="form-control" value="" required autofocus>
@@ -35,7 +35,7 @@
 								<div class="mb-3">
 								
                                     <label class="mb-2 text-muted" for="password">Passsword</label>
-									<input id="password" name="pass" type="password" class="form-control" required>
+									<input id="password" name="password" type="password" class="form-control" required>
 								  
 								</div>
 
@@ -52,7 +52,7 @@
 										Register
 									</button>
 								</div>
-							</form>
+							<?php echo form_close();?>
 						</div>
 						<div class="card-footer py-3 border-0">
 							<div class="text-center">
@@ -68,6 +68,20 @@
 		</div>
 	</section>
 
-	<script src="js/login.js"></script>
+	<script type="text/javascript">
+		<?php if($this->session->flashdata('suc')){?>
+			toastr.sucess("<?php echo $this->session->flashdata('suc');?>");
+		<?php }else if($this->session->flashdata('worng')){?>
+			toastr.error("<?php echo $this->session->flashdata('worng');?>");	
+		<?php }else if($this->session->flashdata('warning')){?>
+			toastr.warning("<?php echo $this->session->flashdata('warning');?>");	
+		<?php }else if($this->session->flashdata('info')){?>
+			toastr.error("<?php echo $this->session->flashdata('info');?>");
+		<?php } ?>
+		<?php
+			$this->session->unset_userdata ('suc'); ?>
+		<?php
+			$this->session->unset_userdata ('worng');?>
+</script>
 </body>
 </html>
