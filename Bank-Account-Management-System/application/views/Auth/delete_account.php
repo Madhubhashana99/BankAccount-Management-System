@@ -6,6 +6,7 @@
     <title>Bank Account Management System</title>
 
     <!-- Add Bootstrap CSS -->
+    <link rel="icon" href="<?=base_url()?>assets/logo-2.png" type="image/gif" height="10px" width="auto">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>

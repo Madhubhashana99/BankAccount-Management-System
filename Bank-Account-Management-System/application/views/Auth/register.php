@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<title>Bank Account Management System</title>
+	<link rel="icon" href="<?=base_url()?>assets/logo-2.png" type="image/gif" height="10px" width="auto">
     <link rel="stylesheet" href="all.css">
     <link rel="stylesheet" href="<?php echo site_url();?>assets/all.css">
 	<link rel="stylesheet" href="<?php echo site_url();?>assets/toast/toast.min.css">
