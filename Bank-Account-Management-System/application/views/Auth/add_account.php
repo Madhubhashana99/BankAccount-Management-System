@@ -55,7 +55,7 @@
         <div class="card-body text-center"> <!-- Center the content within the card -->
             <h5 class="card-title">Add Bank Details</h5>
 
-            <form class="text-left"> <!-- Align the form elements to the left -->
+            <form class="text-left" method="post" action="<?= site_url('Auth/add_account') ?>">
                 <div class="mb-3">
                     <label for="bankName" class="form-label">Bank Name</label>
                     <input type="text" name="bankName" class="form-control" id="bankName">

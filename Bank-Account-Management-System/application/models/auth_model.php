@@ -49,5 +49,18 @@
             }
         }
 
+
+        function insertAccount($data){
+            $this->db->insert('bank_accounts',$data);
+
+            if($this->db->affected_rows()>=0){
+                return true;
+
+            }
+            else{
+                return false;
+            }
+        }
+
     }
 ?>
